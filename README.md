@@ -1,6 +1,6 @@
 # Ayam Potong Landing Page
 
-Sebuah latihan proyek landing page untuk usaha ayam potong yang berfokus pada semantic html, spacing, spacing, responsive design
+Latihan proyek landing page untuk usaha ayam potong yang berfokus pada semantic html, spacing, spacing, responsive design
 
 ## Fitur
 
