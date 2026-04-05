@@ -141,6 +141,14 @@ body {
   color: #ffffff;
 }
 
+.partnership {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  padding: 80px 24px;
+}
+
 .produk {
   display: flex;
   height: 600px;
@@ -174,6 +182,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px; /* 3 x 8pt system */
 }
 
 .card {
@@ -182,6 +193,16 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 200px;
   padding: 16px;
+}
+
+.card__image {
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.card__action {
+  margin-top: 16px; /* 2 x 8pt */
 }
 
 .harga {
