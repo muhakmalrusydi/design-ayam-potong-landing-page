@@ -14,27 +14,29 @@
   <body>
     <!-- Header -->
     <header class="site-header">
-      <div class="site-header__inner">
-        <a href="/" class="site-header__logo">
-          <img src="logo-ayam-segar.png" alt="Logo Ayam Potong Segar" />
-        </a>
+      <div class="container">
+        <div class="site-header__inner">
+          <a href="/" class="site-header__logo">
+            <img src="assets/logo.png" alt="Logo Usaha" />
+          </a>
 
-        <nav class="site-header__nav" aria-label="Navigasi Utama">
-          <ul class="site-header__menu">
-            <li class="site-header__item">
-              <a href="#menu" class="site-header__link">Beranda</a>
-            </li>
-            <li class="site-header__item">
-              <a href="#harga" class="site-header__link">Harga</a>
-            </li>
-            <li class="site-header__item">
-              <a href="#produk" class="site-header__link">Produk</a>
-            </li>
-            <li class="site-header__item">
-              <a href="#testimoni" class="site-header__link">Testimoni</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="site-header__nav" aria-label="Navigasi Utama">
+            <ul class="site-header__menu">
+              <li class="site-header__item">
+                <a href="#hero" class="site-header__link">Beranda</a>
+              </li>
+              <li class="site-header__item">
+                <a href="#harga" class="site-header__link">Harga</a>
+              </li>
+              <li class="site-header__item">
+                <a href="#product" class="site-header__link">Produk</a>
+              </li>
+              <li class="site-header__item">
+                <a href="#testimoni" class="site-header__link">Testimoni</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -42,87 +44,195 @@
     <main>
       <!-- Hero -->
       <section id="hero" class="hero">
-        <div class="hero__content">
-          <h1 class="hero__title">Ayam Potong Segar, Lezat, dan Bergizi</h1>
-          <p class="hero__subtitle">
-            Nikmati ayam potong segar berkualitas tinggi untuk hidangan lezat
-            Anda dan keluarga.
-          </p>
-          <div class="button__groups">
-            <a href="#produk" class="button button--primary button--md">
-              Lihat Produk Kami
-            </a>
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h1 class="hero__title">Ayam Potong Segar, Lezat, dan Bergizi</h1>
+              <p class="hero__subtitle">
+                Nikmati ayam potong segar berkualitas tinggi untuk hidangan
+                lezat Anda dan keluarga.
+              </p>
 
-            <a href="#pemesanan" class="button button--secondary button--md">
-              Pesan Sekarang
-            </a>
+              <div class="button__groups">
+                <a href="#product" class="button button--primary button--md">
+                  Lihat Produk Kami
+                </a>
+
+                <a
+                  href="#pemesanan"
+                  class="button button--secondary button--md"
+                >
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+
+            <div class="hero__image">
+              <img src="assets/hero.png" alt="Ayam potong segar" />
+            </div>
           </div>
         </div>
-        <div class="hero__image">
-          <img src="ayam-potong-segar.jpg" alt="Ayam potong segar" />
+      </section>
+
+      <!-- Trust card -->
+      <section id="trust" class="trust">
+        <div class="container">
+          <div class="trust__container">
+            <div class="trust__list">
+              <div class="trust__item">
+                <img
+                  src="assets/icon1.png"
+                  alt="Ikon Kualitas"
+                  class="trust__icon"
+                />
+                <p class="trust__text">Kualitas Terjamin</p>
+              </div>
+              <div class="trust__item">
+                <img
+                  src="assets/icon2.png"
+                  alt="Ikon Pengiriman Cepat"
+                  class="trust__icon"
+                />
+                <p class="trust__text">Pengiriman Cepat</p>
+              </div>
+              <div class="trust__item">
+                <img
+                  src="assets/icon3.png"
+                  alt="Ikon Harga Bersaing"
+                  class="trust__icon"
+                />
+                <p class="trust__text">Harga Bersaing</p>
+              </div>
+              <div class="trust__item">
+                <img
+                  src="assets/icon4.png"
+                  alt="Ikon Layanan Pelanggan"
+                  class="trust__icon"
+                />
+                <p class="trust__text">Layanan Pelanggan Ramah</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Partnership -->
-      <section class="partnership">
-        <h2 class="partnership__title">Kemitraan Kami</h2>
-        <p class="partnership__subtitle">Kami bekerja sama dengan berbagai mitra terpercaya untuk menyediakan produk terbaik.</p>
+      <section id="partnership" class="partnership">
+        <div class="container">
+          <h2 class="partnership__title">Kemitraan Kami</h2>
+          <p class="partnership__subtitle">
+            Kami bekerja sama dengan berbagai mitra terpercaya untuk menyediakan
+            produk terbaik.
+          </p>
+        </div>
       </section>
 
       <!-- Produk -->
-      <section id="produk" class="produk">
-          <div class="produk__inner">
-            <h2 class="produk__title">Produk Kami</h2>
-            <p class="produk__subtitle">Ragam Pilihan daging ayam segar berkualitas untuk kebutuhan dapur Anda.</p>
-            <div class="produk__grid">
-              <div class="card card--dada">
-                <img src="dada.png" alt="Dada ayam" class="card__image" />
-                <h3 class="card__title">Dada Ayam</h3>
-                 <a href="#detail-dada"
-                  class="card__action button button--primary button--md">Detail</a>
-              </div>
-              <div class="card card--paha">
-                <img src="paha.png" alt="Paha ayam" class="card__image" />
-                <h3 class="card__title">Paha Ayam</h3>
-                <a href="#detail-paha"
-                  class="card__action button button--primary button--md">Detail</a>
-              </div>
-              <div class="card card--sayap">
-                <img src="sayap.png" alt="Sayap ayam" class="card__image" />
-                <h3 class="card__title">Sayap Ayam</h3>
-                <a href="#detail-sayap"
-                  class="card__action button button--primary button--md">Detail</a>
-              </div>
-              <div class="card card--ceker">
-                <img src="ceker.png" alt="Ceker ayam" class="card__image" />
-                <h3 class="card__title">Ceker Ayam</h3>
-                <a href="#detail-ceker"
-                  class="card__action button button--primary button--md">Detail</a>
+      <section id="product" class="product">
+        <div class="container">
+          <div class="product__inner">
+            <div class="product__intro">
+              <h2 class="product__title">Produk Kami</h2>
+              <p class="product__subtitle">
+                Ragam Pilihan daging ayam segar berkualitas untuk kebutuhan
+                dapur Anda.
+              </p>
+              <p class="product__description">
+                Kami menyediakan berbagai pilihan daging ayam segar yang
+                disiapkan dengan higienis dan berkualitas tinggi.
+              </p>
+            </div>
+
+            <div class="product__carousel">
+              <div class="product__track">
+                <div class="card card--dada">
+                  <img
+                    src="assets/dada.png"
+                    alt="Dada ayam"
+                    class="card__image"
+                  />
+                  <h3 class="card__title">Dada Ayam</h3>
+                  <a
+                    href="#detail-dada"
+                    class="card__action button button--primary button--md"
+                    >Detail</a
+                  >
+                </div>
+
+                <div class="card card--paha">
+                  <img
+                    src="assets/paha.png"
+                    alt="Paha ayam"
+                    class="card__image"
+                  />
+                  <h3 class="card__title">Paha Ayam</h3>
+                  <a
+                    href="#detail-paha"
+                    class="card__action button button--primary button--md"
+                    >Detail</a
+                  >
+                </div>
+
+                <div class="card card--sayap">
+                  <img
+                    src="assets/sayap.png"
+                    alt="Sayap ayam"
+                    class="card__image"
+                  />
+                  <h3 class="card__title">Sayap Ayam</h3>
+                  <a
+                    href="#detail-sayap"
+                    class="card__action button button--primary button--md"
+                    >Detail</a
+                  >
+                </div>
+
+                <div class="card card--ceker">
+                  <img
+                    src="assets/ceker.png"
+                    alt="Ceker ayam"
+                    class="card__image"
+                  />
+                  <h3 class="card__title">Ceker Ayam</h3>
+                  <a
+                    href="#detail-ceker"
+                    class="card__action button button--primary button--md"
+                    >Detail</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </section>
 
       <!-- Harga -->
       <section id="harga" class="harga">
-        <h2 class="harga__title">Daftar Harga</h2>
+        <div class="container">
+          <h2 class="harga__title">Daftar Harga</h2>
+        </div>
       </section>
 
       <!-- Testimoni -->
       <section id="testimoni" class="testimoni">
-        <h2 class="testimoni__title">Testimoni Pelanggan</h2>
+        <div class="container">
+          <h2 class="testimoni__title">Testimoni Pelanggan</h2>
+        </div>
       </section>
 
       <!-- Pesan -->
       <section id="pemesanan" class="pesan">
-        <h2 class="pesan__title">Pesan Sekarang</h2>
+        <div class="container">
+          <h2 class="pesan__title">Pesan Sekarang</h2>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
-      <p>&copy; 2026 AyamSegar. Semua hak dilindungi.</p>
+      <div class="container">
+        <p>&copy; 2026 AyamSegar. Semua hak dilindungi.</p>
+      </div>
     </footer>
   </body>
 </html>
