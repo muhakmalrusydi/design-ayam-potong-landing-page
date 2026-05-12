@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -38,13 +42,25 @@
                   <a href="#hero" class="site-header__link">Beranda</a>
                 </li>
                 <li class="site-header__item">
-                  <a href="#harga" class="site-header__link">Harga</a>
+                  <a href="#trust" class="site-header__link">Keunggulan</a>
+                </li>
+                <li class="site-header__item">
+                  <a href="#partnership" class="site-header__link">Kemitraan</a>
                 </li>
                 <li class="site-header__item">
                   <a href="#product" class="site-header__link">Produk</a>
                 </li>
                 <li class="site-header__item">
+                  <a href="#harga" class="site-header__link">Harga</a>
+                </li>
+                <li class="site-header__item">
                   <a href="#testimoni" class="site-header__link">Testimoni</a>
+                </li>
+                <li class="site-header__item">
+                  <a href="#order" class="site-header__link">Pemesanan</a>
+                </li>
+                <li class="site-header__item">
+                  <a href="#service" class="site-header__link">Layanan</a>
                 </li>
               </ul>
             </nav>
@@ -89,61 +105,144 @@
                 <a href="#product" class="btn btn-primary">
                   Lihat Produk Kami
                 </a>
-                <a href="#pemesanan" class="btn btn-secondary">
-                  Pesan Sekarang
-                </a>
+                <a href="#order" class="btn btn-secondary"> Pesan Sekarang </a>
               </div>
             </div>
 
             <div class="hero__image">
-              <img src="assets/hero.png" alt="Ayam potong segar" />
+              <img src="" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Trust card -->
+      <!-- Trust -->
       <section id="trust" class="trust" aria-labelledby="trust-title">
-        <h2 id="trust-title" class="visually-hidden">Keunggulan Kami</h2>
         <div class="container">
+          <h2 id="trust-title" class="trust__title">
+            Kenapa Harus Memilih Kami?
+          </h2>
+
+          <!-- List Items -->
           <ul class="trust__list">
+            <!-- Item 1: Kualitas Terjamin -->
             <li class="trust__item">
-              <img src="assets/icon1.png" alt="" class="trust__icon" />
-              <p class="trust__text">Kualitas Terjamin</p>
+              <div class="trust__item-number">01</div>
+              <div class="trust__item-content">
+                <h3 class="trust__item-title">Kualitas Terjamin</h3>
+                <p class="trust__item-description">
+                  Kami berkomitmen untuk memberikan produk berkualitas tinggi
+                  dengan standar internasional. Setiap produk telah melalui
+                  quality control yang ketat untuk memastikan kepuasan Anda.
+                </p>
+              </div>
             </li>
 
+            <!-- Item 2: Pengiriman Cepat -->
             <li class="trust__item">
-              <img src="assets/icon2.png" alt="" class="trust__icon" />
-              <p class="trust__text">Pengiriman Cepat</p>
+              <div class="trust__item-number">02</div>
+              <div class="trust__item-content">
+                <h3 class="trust__item-title">Pengiriman Cepat</h3>
+                <p class="trust__item-description">
+                  Dengan jaringan logistik yang luas, kami menjamin pengiriman
+                  cepat ke seluruh nusantara. Paket Anda akan sampai tepat waktu
+                  dengan aman dan terjaga.
+                </p>
+              </div>
             </li>
 
+            <!-- Item 3: Harga Bersaing -->
             <li class="trust__item">
-              <img src="assets/icon3.png" alt="" class="trust__icon" />
-              <p class="trust__text">Harga Bersaing</p>
-            </li>
-
-            <li class="trust__item">
-              <img src="assets/icon4.png" alt="" class="trust__icon" />
-              <p class="trust__text">Layanan Terjamin</p>
+              <div class="trust__item-number">03</div>
+              <div class="trust__item-content">
+                <h3 class="trust__item-title">Harga Bersaing</h3>
+                <p class="trust__item-description">
+                  Kami menawarkan harga yang kompetitif tanpa mengorbankan
+                  kualitas. Dapatkan nilai terbaik untuk setiap rupiah yang Anda
+                  investasikan bersama kami.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Partnership -->
+      <!--Partnersgip-->
       <section
         id="partnership"
         class="partnership"
         aria-labelledby="partnership__title"
       >
         <div class="container">
-          <h2 id="partnership__title" class="partnership__title">
-            Kemitraan Kami
-          </h2>
-          <p class="partnership__subtitle">
-            Kami bekerja sama dengan berbagai mitra terpercaya untuk menyediakan
-            produk terbaik.
-          </p>
+          <div class="partnership__inner">
+            <div class="partnership__top">
+              <div class="partnership__stat">
+                <h2
+                  class="partnership__number"
+                  data-target="120"
+                  data-suffix="+"
+                >
+                  0
+                </h2>
+                <p>Mitra Usaha Aktif</p>
+              </div>
+
+              <div class="partnership__stat">
+                <h2
+                  class="partnership__number"
+                  data-target="10000"
+                  data-format="id"
+                  data-suffix="+"
+                >
+                  0
+                </h2>
+                <p>Produk Terjual</p>
+              </div>
+
+              <div class="partnership__stat">
+                <h2 class="partnership__number" data-target="5">0</h2>
+                <p>Kota Operasional</p>
+              </div>
+            </div>
+
+            <!--Marquee Atas-->
+            <div class="partnership__marquee">
+              <div class="marquee">
+                <div class="marquee__track">
+                  <img src="assets/partner1.png" alt="Mitra1" />
+                  <img src="assets/partner2.png" alt="Mitra2" />
+                  <img src="assets/partner3.png" alt="Mitra3" />
+                  <img src="assets/partner4.png" alt="Mitra4" />
+                  <img src="assets/partner5.png" alt="Mitra5" />
+
+                  <!-- Duplikat -->
+                  <img src="assets/partner1.png" alt="Mitra1" />
+                  <img src="assets/partner2.png" alt="Mitra2" />
+                  <img src="assets/partner3.png" alt="Mitra3" />
+                  <img src="assets/partner4.png" alt="Mitra4" />
+                  <img src="assets/partner5.png" alt="Mitra5" />
+                </div>
+              </div>
+
+              <!--Marquee Bawah-->
+              <div class="marquee marquee--reverse">
+                <div class="marquee__track">
+                  <img src="assets/partner1.png" alt="Mitra1" />
+                  <img src="assets/partner2.png" alt="Mitra2" />
+                  <img src="assets/partner3.png" alt="Mitra3" />
+                  <img src="assets/partner4.png" alt="Mitra4" />
+                  <img src="assets/partner5.png" alt="Mitra5" />
+
+                  <!-- Duplikat -->
+                  <img src="assets/partner1.png" alt="Mitra1" />
+                  <img src="assets/partner2.png" alt="Mitra2" />
+                  <img src="assets/partner3.png" alt="Mitra3" />
+                  <img src="assets/partner4.png" alt="Mitra4" />
+                  <img src="assets/partner5.png" alt="Mitra5" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -154,73 +253,263 @@
             <div class="product__intro">
               <h2 id="product__title" class="product__title">Produk Kami</h2>
               <p class="product__subtitle">
-                Ragam Pilihan daging ayam segar berkualitas untuk kebutuhan
+                Ragam pilihan daging ayam segar berkualitas untuk kebutuhan
                 dapur Anda.
               </p>
             </div>
 
             <div class="product__carousel">
               <div class="product__track">
-                <div class="card card--dada">
-                  <img
-                    src="assets/dada ayam.jpg"
-                    alt="Dada ayam"
-                    class="card__image"
-                  />
-                  <h3 class="card__title">Dada Ayam</h3>
-                  <p class="card__description">
-                    Dada ayam tanpa tulang yang lembut dan rendah lemak.
-                  </p>
-                  <a href="#detail-dada" class="card__action btn btn-primary"
-                    >Detail</a
-                  >
+                <!-- DADA -->
+                <div
+                  class="card card--dada"
+                  role="group"
+                  aria-label="Dada Ayam"
+                >
+                  <div class="card__inner">
+                    <div class="card__front">
+                      <p class="card__number">01</p>
+                      <img
+                        src="assets/dada ayam.jpg"
+                        alt="Dada ayam"
+                        class="card__image"
+                      />
+                      <div class="card__content">
+                        <h3 class="card__title">Dada Ayam</h3>
+                        <p class="card__description">
+                          Dada ayam tanpa tulang yang lembut dan rendah lemak.
+                        </p>
+                        <button class="card__action">Detail</button>
+                      </div>
+                    </div>
+                    <!-- ✅ tutup card__front -->
+                    <div class="card__back">
+                      <button
+                        class="card__back-btn"
+                        aria-label="Kembali ke tampilan depan"
+                      >
+                        &#8592;
+                      </button>
+                      <div
+                        class="calorie"
+                        data-percent="72"
+                        aria-label="165 kkal per 100 gram"
+                      >
+                        <svg viewBox="0 0 120 120" aria-hidden="true">
+                          <circle cx="60" cy="60" r="54"></circle>
+                          <circle cx="60" cy="60" r="54"></circle>
+                        </svg>
+                        <div class="calorie__text">165<br />kkal</div>
+                      </div>
+                      <p>Nilai kalori per 100 gram</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="card card--paha">
-                  <img
-                    src="assets/paha ayam.jpg"
-                    alt="Paha ayam"
-                    class="card__image"
-                  />
-                  <h3 class="card__title">Paha Ayam</h3>
-                  <p class="card__description">
-                    Paha bagian bawah dan atas dengan daging yang besar
-                  </p>
-                  <a href="#detail-paha" class="card__action btn btn-primary"
-                    >Detail</a
-                  >
+                <!-- PAHA -->
+                <div
+                  class="card card--paha"
+                  role="group"
+                  aria-label="Paha Ayam"
+                >
+                  <div class="card__inner">
+                    <div class="card__front">
+                      <p class="card__number">02</p>
+                      <img
+                        src="assets/paha ayam.jpg"
+                        alt="Paha ayam"
+                        class="card__image"
+                      />
+                      <div class="card__content">
+                        <!-- ✅ tambah card__content -->
+                        <h3 class="card__title">Paha Ayam</h3>
+                        <p class="card__description">
+                          Paha bagian bawah dan atas dengan daging yang besar.
+                        </p>
+                        <button class="card__action">Detail</button>
+                      </div>
+                    </div>
+                    <div class="card__back">
+                      <button
+                        class="card__back-btn"
+                        aria-label="Kembali ke tampilan depan"
+                      >
+                        &#8592;
+                      </button>
+                      <div
+                        class="calorie"
+                        data-percent="85"
+                        aria-label="250 kkal per 100 gram"
+                      >
+                        <svg viewBox="0 0 120 120" aria-hidden="true">
+                          <circle cx="60" cy="60" r="54"></circle>
+                          <circle cx="60" cy="60" r="54"></circle>
+                        </svg>
+                        <div class="calorie__text">250<br />kkal</div>
+                      </div>
+                      <p>Nilai kalori per 100 gram</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="card card--sayap">
-                  <img
-                    src="assets/sayap ayam.jpg"
-                    alt="Sayap ayam"
-                    class="card__image"
-                  />
-                  <h3 class="card__title">Sayap Ayam</h3>
-                  <p class="card__description">
-                    Ukuran pas dengan perpaduan kulit dan daging yang lezat.
-                  </p>
-                  <a href="#detail-sayap" class="card__action btn btn-primary"
-                    >Detail</a
-                  >
+                <!-- SAYAP -->
+                <div
+                  class="card card--sayap"
+                  role="group"
+                  aria-label="Sayap Ayam"
+                >
+                  <div class="card__inner">
+                    <div class="card__front">
+                      <p class="card__number">03</p>
+                      <img
+                        src="assets/sayap ayam.jpg"
+                        alt="Sayap ayam"
+                        class="card__image"
+                      />
+                      <div class="card__content">
+                        <!-- ✅ tambah card__content -->
+                        <h3 class="card__title">Sayap Ayam</h3>
+                        <p class="card__description">
+                          Ukuran pas dengan perpaduan kulit dan daging yang
+                          lezat.
+                        </p>
+                        <button class="card__action">Detail</button>
+                      </div>
+                    </div>
+                    <div class="card__back">
+                      <button
+                        class="card__back-btn"
+                        aria-label="Kembali ke tampilan depan"
+                      >
+                        &#8592;
+                      </button>
+                      <div
+                        class="calorie"
+                        data-percent="78"
+                        aria-label="203 kkal per 100 gram"
+                      >
+                        <svg viewBox="0 0 120 120" aria-hidden="true">
+                          <circle cx="60" cy="60" r="54"></circle>
+                          <circle cx="60" cy="60" r="54"></circle>
+                        </svg>
+                        <div class="calorie__text">203<br />kkal</div>
+                      </div>
+                      <p>Nilai kalori per 100 gram</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="card card--ceker">
-                  <img
-                    src="assets/ceker ayam.jpg"
-                    alt="Ceker ayam"
-                    class="card__image"
-                  />
-                  <h3 class="card__title">Ceker Ayam</h3>
-                  <p class="card__description">
-                    Kaya akan kolagen dan tekstur yang kenyal.
-                  </p>
-                  <a href="#detail-ceker" class="card__action btn btn-primary"
-                    >Detail</a
-                  >
+                <!-- CEKER -->
+                <div
+                  class="card card--ceker"
+                  role="group"
+                  aria-label="Ceker Ayam"
+                >
+                  <div class="card__inner">
+                    <div class="card__front">
+                      <p class="card__number">04</p>
+                      <img
+                        src="assets/ceker ayam.jpg"
+                        alt="Ceker ayam"
+                        class="card__image"
+                      />
+                      <div class="card__content">
+                        <!-- ✅ tambah card__content -->
+                        <h3 class="card__title">Ceker Ayam</h3>
+                        <p class="card__description">
+                          Kaya akan kolagen dan tekstur yang kenyal.
+                        </p>
+                        <button class="card__action">Detail</button>
+                      </div>
+                    </div>
+                    <div class="card__back">
+                      <button
+                        class="card__back-btn"
+                        aria-label="Kembali ke tampilan depan"
+                      >
+                        &#8592;
+                      </button>
+                      <div
+                        class="calorie"
+                        data-percent="60"
+                        aria-label="150 kkal per 100 gram"
+                      >
+                        <svg viewBox="0 0 120 120" aria-hidden="true">
+                          <circle cx="60" cy="60" r="54"></circle>
+                          <circle cx="60" cy="60" r="54"></circle>
+                        </svg>
+                        <div class="calorie__text">150<br />kkal</div>
+                      </div>
+                      <p>Nilai kalori per 100 gram</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- HATI -->
+                <div
+                  class="card card--Hati"
+                  role="group"
+                  aria-label="Hati Ayam"
+                >
+                  <div class="card__inner">
+                    <div class="card__front">
+                      <p class="card__number">05</p>
+                      <img
+                        src="assets/hati ayam.jpg"
+                        alt="Hati ayam"
+                        class="card__image"
+                      />
+                      <div class="card__content">
+                        <!-- ✅ tambah card__content -->
+                        <h3 class="card__title">Hati Ayam</h3>
+                        <p class="card__description">
+                          Kaya zat besi dan nutrisi tinggi untuk tubuh.
+                        </p>
+                        <button class="card__action">Detail</button>
+                      </div>
+                    </div>
+                    <div class="card__back">
+                      <button
+                        class="card__back-btn"
+                        aria-label="Kembali ke tampilan depan"
+                      >
+                        &#8592;
+                      </button>
+                      <div
+                        class="calorie"
+                        data-percent="60"
+                        aria-label="150 kkal per 100 gram"
+                      >
+                        <svg viewBox="0 0 120 120" aria-hidden="true">
+                          <circle cx="60" cy="60" r="54"></circle>
+                          <circle cx="60" cy="60" r="54"></circle>
+                        </svg>
+                        <div class="calorie__text">150<br />kkal</div>
+                      </div>
+                      <p>Nilai kalori per 100 gram</p>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <!-- end product__track -->
+
+              <button
+                class="carousel-nav carousel-nav--prev"
+                aria-label="Sebelumnya"
+              >
+                ‹
+              </button>
+              <button
+                class="carousel-nav carousel-nav--next"
+                aria-label="Berikutnya"
+              >
+                ›
+              </button>
+              <div
+                class="carousel-dots"
+                role="tablist"
+                aria-label="Navigasi produk"
+              ></div>
             </div>
           </div>
         </div>
@@ -230,9 +519,9 @@
       <section id="harga" class="pricelist" aria-labelledby="harga__title">
         <div class="container">
           <div class="pricelist__header">
-            <h2 id="harga__title" class="pricelist__title">Daftar Harga</h2>
+            <h2 id="pricelist__title" class="pricelist__title">Daftar Harga</h2>
             <p class="pricelist__subtitle">
-              Harga per kilogram · Minimum pemesanan 1 kg
+              Harga per kilogram & Minimum pemesanan 1 kg
             </p>
           </div>
 
@@ -254,15 +543,10 @@
               </article>
             </li>
 
-            <!-- ITEM 2 (FEATURED) -->
+            <!-- ITEM 2 (Diskon) -->
             <li class="pricelist__item">
-              <article
-                class="price-card price-card--featured"
-                aria-label="Paha Ayam — Terlaris"
-              >
-                <span class="price-card__badge" aria-hidden="true"
-                  >Terlaris</span
-                >
+              <article class="price-card" aria-label="Paha Ayam — Promo">
+                <span class="price-card__badge" aria-hidden="true">Diskon</span>
                 <h3 class="price-card__name">Paha Ayam</h3>
                 <p class="price-card__price">
                   Rp&nbsp;35.000
@@ -273,7 +557,7 @@
                   <li>Segar dipotong hari ini</li>
                   <li>Dikemas vakum higienis</li>
                 </ul>
-                <a href="#pemesanan" class="btn btn-white">Pesan</a>
+                <a href="#pemesanan" class="btn btn-primary">Pesan</a>
               </article>
             </li>
 
@@ -323,7 +607,7 @@
         <div class="container">
           <div class="testimoni__header">
             <h2 id="testimoni__title" class="testimoni__title">
-              Apa Kata Pelanggan Kami
+              Apa Kata Pelanggan Kami?
             </h2>
             <p class="testimoni__subtitle">
               Kepercayaan pelanggan adalah prioritas utama kami.
@@ -333,48 +617,265 @@
           <div class="testimoni__grid">
             <!-- Card 1 -->
             <article class="testimoni-card">
-              <p class="testimoni-card__text">
-                “Ayamnya selalu segar dan pengiriman cepat. Sangat membantu
-                usaha katering saya.”
-              </p>
               <div class="testimoni-card__author">
-                <img src="assets/user1.jpg" alt="Foto pelanggan" />
+                <img
+                  src="assets/testimonial-ibu rina.jpg"
+                  alt="Foto Ibu Rina"
+                />
                 <div>
                   <h3 class="testimoni-card__name">Ibu Rina</h3>
                   <span class="testimoni-card__role">Pemilik Katering</span>
                 </div>
               </div>
+              <p class="testimoni-card__text">
+                “Ayamnya selalu segar dan pengiriman cepat. Sangat membantu
+                usaha katering saya.”
+              </p>
+              <div class="testimoni-card__meta">
+                <div
+                  class="testimoni-card__rating"
+                  aria-label="Rating 5 dari 5"
+                >
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimoni-card__date">4j lalu</p>
+              </div>
             </article>
 
             <!-- Card 2 -->
             <article class="testimoni-card">
+              <div class="testimoni-card__author">
+                <img
+                  src="assets/Testimonial-pak dedi.jpg"
+                  alt="Foto Pak Dedi"
+                />
+                <div>
+                  <h3 class="testimoni-card__name">Pak Dedi</h3>
+                  <span class="testimoni-card__role">Pemilik Warung Makan</span>
+                </div>
+              </div>
               <p class="testimoni-card__text">
                 “Harga bersaing dengan kualitas terbaik. Selalu langganan di
                 sini setiap minggu.”
               </p>
-              <div class="testimoni-card__author">
-                <img src="assets/user2.jpg" alt="Foto pelanggan" />
-                <div>
-                  <h3 class="testimoni-card__name">Pak Dedi</h3>
-                  <span class="testimoni-card__role"
-                    >Pedagang Warung Makan</span
-                  >
+              <div class="testimoni-card__meta">
+                <div
+                  class="testimoni-card__rating"
+                  style="--rating: 4.8"
+                  aria-label="Rating 4.8 dari 5"
+                >
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
                 </div>
+                <p class="testimoni-card__date">16j lalu</p>
               </div>
             </article>
 
             <!-- Card 3 -->
             <article class="testimoni-card">
-              <p class="testimoni-card__text">
-                “Pelayanan ramah dan kualitas ayam benar-benar terjaga. Sangat
-                direkomendasikan.”
-              </p>
               <div class="testimoni-card__author">
-                <img src="assets/user3.jpg" alt="Foto pelanggan" />
+                <img
+                  src="assets/Testimonial-mbak sari.jpg"
+                  alt="Foto Mbak Sari"
+                />
                 <div>
                   <h3 class="testimoni-card__name">Mbak Sari</h3>
                   <span class="testimoni-card__role">Ibu Rumah Tangga</span>
                 </div>
+              </div>
+              <p class="testimoni-card__text">
+                “Pelayanan ramah dan kualitas ayam benar-benar terjaga. Sangat
+                direkomendasikan.”
+              </p>
+              <div class="testimoni-card__meta">
+                <div
+                  class="testimoni-card__rating"
+                  style="--rating: 4.8"
+                  aria-label="Rating 4.8 dari 5"
+                >
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimoni-card__date">24j lalu</p>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="testimoni-card">
+              <div class="testimoni-card__author">
+                <img
+                  src="assets/testimonial-pak-budi.jpg"
+                  alt="Foto Pak Budi"
+                />
+                <div>
+                  <h3 class="testimoni-card__name">Pak Budi</h3>
+                  <span class="testimoni-card__role">Pengusaha Restoran</span>
+                </div>
+              </div>
+              <p class="testimoni-card__text">
+                “Kualitas daging ayamnya konsisten. Teksturnya empuk dan sangat
+                bersih saat sampai.”
+              </p>
+              <div class="testimoni-card__meta">
+                <div
+                  class="testimoni-card__rating"
+                  aria-label="Rating 5 dari 5"
+                >
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimoni-card__date">2 hari lalu</p>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="testimoni-card">
+              <div class="testimoni-card__author">
+                <img src="assets/testimonial-bu-maya.jpg" alt="Foto Bu Maya" />
+                <div>
+                  <h3 class="testimoni-card__name">Bu Maya</h3>
+                  <span class="testimoni-card__role">Chef Profesional</span>
+                </div>
+              </div>
+              <p class="testimoni-card__text">
+                “Potongannya sangat rapi dan sesuai permintaan. Sangat
+                memudahkan proses memasak di dapur.”
+              </p>
+              <div class="testimoni-card__meta">
+                <div
+                  class="testimoni-card__rating"
+                  style="--rating: 4.9"
+                  aria-label="Rating 4.9 dari 5"
+                >
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimoni-card__date">3 hari lalu</p>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="testimoni-card">
+              <div class="testimoni-card__author">
+                <img
+                  src="assets/testimonial-mas-reza.jpg"
+                  alt="Foto Mas Reza"
+                />
+                <div>
+                  <h3 class="testimoni-card__name">Mas Reza</h3>
+                  <span class="testimoni-card__role">Pelanggan Setia</span>
+                </div>
+              </div>
+              <p class="testimoni-card__text">
+                “Respon admin sangat cepat dan solutif. Pengiriman selalu tepat
+                waktu sesuai jadwal.”
+              </p>
+              <div class="testimoni-card__meta">
+                <div
+                  class="testimoni-card__rating"
+                  aria-label="Rating 5 dari 5"
+                >
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimoni-card__date">5 hari lalu</p>
+              </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="testimoni-card">
+              <div class="testimoni-card__author">
+                <img
+                  src="assets/testimonial-teh-lina.jpg"
+                  alt="Foto Teh Lina"
+                />
+                <div>
+                  <h3 class="testimoni-card__name">Teh Lina</h3>
+                  <span class="testimoni-card__role"
+                    >Pemilik Kedai Ayam Goreng</span
+                  >
+                </div>
+              </div>
+              <p class="testimoni-card__text">
+                “Sudah coba berbagai supplier, tapi di sini yang paling pas
+                harganya dan kualitasnya juara.”
+              </p>
+              <div class="testimoni-card__meta">
+                <div
+                  class="testimoni-card__rating"
+                  aria-label="Rating 5 dari 5"
+                >
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimoni-card__date">1 minggu lalu</p>
+              </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="testimoni-card">
+              <div class="testimoni-card__author">
+                <img
+                  src="assets/testimonial-pak-agus.jpg"
+                  alt="Foto Pak Agus"
+                />
+                <div>
+                  <h3 class="testimoni-card__name">Pak Agus</h3>
+                  <span class="testimoni-card__role">Pengelola Kantin</span>
+                </div>
+              </div>
+              <p class="testimoni-card__text">
+                “Packingnya sangat rapi dan higienis. Ayam sampai dalam keadaan
+                tetap dingin dan segar.”
+              </p>
+              <div class="testimoni-card__meta">
+                <div
+                  class="testimoni-card__rating"
+                  style="--rating: 4.7"
+                  aria-label="Rating 4.7 dari 5"
+                >
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimoni-card__date">1 minggu lalu</p>
+              </div>
+            </article>
+
+            <!-- Card 9 -->
+            <article class="testimoni-card">
+              <div class="testimoni-card__author">
+                <img
+                  src="assets/testimonial-mba-nina.jpg"
+                  alt="Foto Mba Nina"
+                />
+                <div>
+                  <h3 class="testimoni-card__name">Mba Nina</h3>
+                  <span class="testimoni-card__role">Food Blogger</span>
+                </div>
+              </div>
+              <p class="testimoni-card__text">
+                “Kualitas ayamnya benar-benar premium. Masakan jadi jauh lebih
+                enak kalau bahan bakunya segar begini.”
+              </p>
+              <div class="testimoni-card__meta">
+                <div
+                  class="testimoni-card__rating"
+                  aria-label="Rating 5 dari 5"
+                >
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p class="testimoni-card__date">2 minggu lalu</p>
               </div>
             </article>
           </div>
@@ -382,17 +883,60 @@
       </section>
 
       <!-- Pesan -->
-      <section class="order">
+      <section id="order" class="order" aria-labelledby="order__title">
         <div class="container">
           <div class="order__inner">
-            <div class="order__header">
-              <h2 class="order__title">Pemesanan</h2>
-              <p class="order__subtitle">
-                Isi data berikut untuk melakukan pemesanan produk ayam potong
-                segar kami.
-              </p>
-            </div>
+            <div class="order__left">
+              <div class="order__header">
+                <h2 id="order__title" class="order__title">
+                  Pemesanan Jadi Lebih Mudah
+                </h2>
+                <p class="order__subtitle">
+                  Tunggu apalagi? Pesan sekarang dan nikmati ayam potong segar
+                  langsung di rumah Anda!
+                </p>
+              </div>
 
+              <div class="order__visual">
+                <div class="visual__clip">
+                  <div class="phone-mockup">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                      <div class="ui-main-stage">
+                        <div class="stage-btn"></div>
+                      </div>
+
+                      <div class="payment-card is-success">
+                        <div class="success-icon">✓</div>
+                        <h4 class="success-title">Pembayaran Berhasil!</h4>
+                        <p class="success-msg">
+                          Pesanan ayam segar Anda sedang diproses.
+                        </p>
+                        <button type="button" class="close-btn">Tutup</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="floating-badge badge-1">
+                  <div class="badge-icon badge-cod"></div>
+                  <div class="floating-text">
+                    <span>Bayar di Tempat</span>
+                  </div>
+                </div>
+
+                <div class="floating-badge badge-2">
+                  <div class="badge-icon badge-bank"></div>
+                  <div class="floating-text">
+                    <span>Select Your Seat</span>
+                  </div>
+                </div>
+
+                <div class="floating-badge badge-3">
+                  <div class="badge-icon badge-digital">E-wallet</div>
+                </div>
+              </div>
+            </div>
             <form class="order__form">
               <div class="order__field">
                 <label for="name" class="order__label">Nama Lengkap</label>
@@ -401,6 +945,7 @@
                   id="name"
                   class="order__input"
                   placeholder="Masukkan nama lengkap"
+                  required
                 />
               </div>
 
@@ -413,12 +958,13 @@
                   id="phone"
                   class="order__input"
                   placeholder="08xxxxxxxxxx"
+                  required
                 />
               </div>
 
               <div class="order__field">
                 <label for="product" class="order__label">Pilih Produk</label>
-                <select id="product" class="order__select">
+                <select id="product" class="order__select" required>
                   <option value="">-- Pilih Produk --</option>
                   <option>Ayam Utuh</option>
                   <option>Ayam Potong 8</option>
@@ -434,6 +980,7 @@
                   id="quantity"
                   class="order__input"
                   min="1"
+                  required
                 />
               </div>
 
@@ -446,6 +993,7 @@
                   rows="3"
                   class="order__textarea"
                   placeholder="Masukkan alamat lengkap"
+                  required
                 ></textarea>
               </div>
 
@@ -453,7 +1001,7 @@
                 <label for="payment" class="order__label"
                   >Metode Pembayaran</label
                 >
-                <select id="payment" class="order__select">
+                <select id="payment" class="order__select" required>
                   <option value="">-- Pilih Pembayaran --</option>
                   <option>Transfer Bank</option>
                   <option>E-Wallet</option>
@@ -475,16 +1023,29 @@
     <footer class="site-footer">
       <div class="container">
         <div class="site-footer__grid">
+          <!-- Kolom 1: Brand & Social -->
           <div class="site-footer__brand">
             <img src="assets/logo.png" alt="Logo Usaha" />
             <p>
               Ayam potong segar yang diolah secara higienis dan berkualitas
-              untuk hidanagan anda.
+              untuk hidangan Anda.
             </p>
+            <div class="site-footer__social">
+              <a href="#" class="social-btn" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-btn" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" class="social-btn" aria-label="WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
           </div>
 
+          <!-- Kolom 2: Navigasi -->
           <nav class="site-footer__nav" aria-label="Navigasi Footer">
-            <h3 class="site-footer__title">Navigasi</h3>
+            <h3 class="site-footer__heading">Navigasi</h3>
             <ul>
               <li><a href="#hero">Beranda</a></li>
               <li><a href="#product">Produk</a></li>
@@ -493,17 +1054,47 @@
             </ul>
           </nav>
 
-          <div class="site-footer__contact">
-            <h3 class="site-footer__title">Kontak</h3>
-            <p>WhatsApp: 0883120987750</p>
-            <p>Bandung, Indonesia</p>
+          <!-- Kolom 3: Jam Operasional -->
+          <div class="site-footer__hours">
+            <h3 class="site-footer__heading">Jam Operasional</h3>
+            <ul>
+              <li>
+                <span class="hours-day">Senin - Jumat</span>
+                <span class="hours-time">10.00 — 21.00</span>
+              </li>
+              <li>
+                <span class="hours-day">Sabtu</span>
+                <span class="hours-time">09.00 — 22.00</span>
+              </li>
+              <li>
+                <span class="hours-day">Minggu</span>
+                <span class="hours-time">10.00 — 18.00</span>
+              </li>
+            </ul>
           </div>
         </div>
 
         <div class="site-footer__bottom">
-          <p>© 2026 AyamSegar. Semua hak dilindungi.</p>
+          <p>© 2026 Kokoro. Semua hak dilindungi.</p>
         </div>
       </div>
     </footer>
+
+    <!-- WhatsApp Floating Action Button -->
+    <a
+      href="https://wa.me/6281234567890"
+      class="whatsapp-fab"
+      aria-label="Chat WhatsApp"
+      target="_blank"
+      rel="noopener"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="whatsapp-fab__tooltip">Chat sekarang!</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
   </body>
 </html>
